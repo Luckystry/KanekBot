@@ -82,5 +82,5 @@ bot.on('message', message => {
     }
 
    })}
-)
+)})
  
