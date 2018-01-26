@@ -58,9 +58,9 @@ bot.on('message', message => {
 
     }
 
-    if (message.content === "regle"){
-        message.reply("Merci de prndre connaissance des règles et de les appliquers #vos-roles")
-        console.log("Commande je t'aime effectué");
+    if (message.content === "regles"){
+        message.reply("Merci de prendre connaissance des règles et de les appliquers #vos-roles")
+        console.log("Commande regle effectué");
 
     }
 
@@ -76,3 +76,4 @@ bot.on('message', message => {
     }
 
 });
+  
