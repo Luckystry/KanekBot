@@ -16,6 +16,11 @@ bot.on('message', message => {
         message.channel.sendMessage("Liste des commandes: \n -*help");
     }
 
+    bot.on('message', message => {
+        if (message.content === prefix + "new"){
+            message.channel.sendMessage("Pour les nouveaux allez dans le channel #vos-roles. Vous allez voir que vous pouvez choisir vos rôles par exemples H en réaction c'est homme et F en réaction c'est Femme, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.");
+        }
+
     if (message.content === "wesh"){
         message.reply("On est pas a Villeurbanne ici")
         console.log("Commande wesh effectué");
@@ -60,7 +65,7 @@ bot.on('message', message => {
 
    bot.on('message', message => {
     if (message.content === prefix + "regle"){
-        message.channel.sendMessage("Merci de prendre connaissance des règles et de les appliquer #vos-roles");
+        message.channel.sendMessage("Merci de prendre connaissance des règles et de les appliquer #vos-roles.");
     }
     
 
