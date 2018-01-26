@@ -58,11 +58,12 @@ bot.on('message', message => {
 
     }
 
-    if (message.content === "regles"){
-        message.reply("Merci de prendre connaissance des règles et de les appliquers #vos-roles")
-        console.log("Commande regle effectué");
-
+   bot.on('message', message => {
+    if (message.content === prefix + "regle"){
+        message.channel.sendMessage("Merci de prendre connaissance des règles et de les appliquer #vos-roles");
     }
+    
+
 
     if (message.content === prefix + "embed"){
         var embed = new Discord.RichEmbed()
@@ -75,5 +76,6 @@ bot.on('message', message => {
     message.channel.sendEmbed(embed);
     }
 
-});
-  
+   })}
+)
+ 
