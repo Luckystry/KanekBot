@@ -57,5 +57,22 @@ bot.on('message', message => {
         console.log("Commande je t'aime effectué");
 
     }
+
+    if (message.content === "regle"){
+        message.reply("Merci de prndre connaissance des règles et de les appliquers #vos-roles")
+        console.log("Commande je t'aime effectué");
+
+    }
+
+    if (message.content === prefix + "embed"){
+        var embed = new Discord.RichEmbed()
+        .setTitle("EMBED")
+        .setDescription("Ceci est un embed")
+        .addField("help","Pasge d'aide",true)
+        .addField("Embed01","Embed 01 !", true)
+        .setColor("#0040FF")
+        .setFooter("Bon moment parmis nous!")
+    message.channel.sendEmbed(embed);
+    }
+
 });
-  
