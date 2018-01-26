@@ -81,6 +81,5 @@ bot.on('message', message => {
     message.channel.sendEmbed(embed);
     }
 
-   })}
-)})
+})})})
  
