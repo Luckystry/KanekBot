@@ -64,12 +64,9 @@ bot.on('message', message => {
 
     }
 
-   bot.on('message', message => {
-    if (message.content === prefix + "regle"){
-        message.channel.sendMessage("Merci de prendre connaissance des règles et de les appliquer #vos-roles.");
-    }
 
-})})
+
+})
 
 
     
