@@ -13,7 +13,7 @@ bot.login("NDA2Mzg2NTUwOTY4OTQyNTky.DUyTRg.WQuOr1iueUEDQxqlYXYZFmWZP4o");
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n -*help");
+        message.channel.sendMessage("Liste des commandes: \n -*help. new");
     }
 
 
