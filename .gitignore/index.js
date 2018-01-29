@@ -16,6 +16,16 @@ bot.on('message', message => {
         message.channel.sendMessage("Liste des commandes: \n -*help. new");
     }
 
+    ClientDiscord.on("message",message => {
+        if(message.content[0] === PREFIX) {
+            if(message.content === "*regles"){
+                message.channel.send("Merci de prendre connaissance des règles et de les appliqués");
+                ClientDiscord.channels.get("406386550968942592").send("Commande de l'ulilisateur : " + message.author.username);
+            }
+           
+        }
+    });
+
 
     if (message.content === "new"){
         message.reply("Pour les nouveaux allez dans le channel #vos-roles. Vous allez voir que vous pouvez choisir vos rôles par exemples H en réaction c'est homme et F en réaction c'est Femme, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.")
