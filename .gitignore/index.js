@@ -20,7 +20,7 @@ bot.on('message', message => {
       if (message.content === '*regles') {
           message.channel.send('Merci de prendre connaissance des règles de les appliquées.')
       }
-  })
+  });
 
 
     if (message.content === "new"){
@@ -72,7 +72,7 @@ bot.on('message', message => {
 
 
 
-});
+})
 
 
     
