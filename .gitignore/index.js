@@ -16,15 +16,15 @@ bot.on('message', function (message) {
     }
   })
 
+bot.on('message', function (message) {
+    if (message.content === '*new') {
+        message.channel.send('Pour les nouveaux allez dans le channel #vos-roles. Vous allez voir que vous pouvez choisir vos rôles par exemples H en réaction c'est homme et F en réaction c'est Femme, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.')
+    }
+  })
+
 bot.on('message', message => {
     if (message.content === prefix + "help"){
         message.channel.sendMessage("Liste des commandes: \n -*help. new");
-    }
-
-
-    if (message.content === "new"){
-        message.reply("Pour les nouveaux allez dans le channel #vos-roles. Vous allez voir que vous pouvez choisir vos rôles par exemples H en réaction c'est homme et F en réaction c'est Femme, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.")
-        console.log("Commande new effectué");
     }
 
     if (message.content === "wesh"){
