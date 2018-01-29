@@ -8,13 +8,23 @@ bot.on('ready', function() {
     console.log("Connectedç");
 });
 
-bot.login("NDA2Mzg2NTUwOTY4OTQyNTky.DUyTRg.WQuOr1iueUEDQxqlYXYZFmWZP4o");
+bot.login("NDA2Mzg2NTUwOTY4OTQyNTky.DVB-ZQ.47ONjyymj9eyiGfqTJpWS5WXGaE");
 
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
         message.channel.sendMessage("Liste des commandes: \n -*help. new");
     }
+
+    ClientDiscord.on("message",message => {
+        if(message.content[0] === PREFIX) {
+            if(message.content === "*regles"){
+                message.channel.send("Merci de prendre connaissance des règles et de les appliqués");
+                ClientDiscord.channels.get("406386550968942592").send("Commande de l'ulilisateur : " + message.author.username);
+            }
+           
+        }
+    });
 
 
     if (message.content === "new"){
