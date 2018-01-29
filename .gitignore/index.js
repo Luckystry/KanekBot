@@ -16,6 +16,13 @@ bot.on('message', message => {
         message.channel.sendMessage("Liste des commandes: \n -*help. new");
     }
 
+  bot.on('message', function (message) {
+      if (message.content === '*regles') {
+          message.channel.send('Merci de prendre connaissance des règles de les appliquées.')
+      }
+  })
+
+
     if (message.content === "new"){
         message.reply("Pour les nouveaux allez dans le channel #vos-roles. Vous allez voir que vous pouvez choisir vos rôles par exemples H en réaction c'est homme et F en réaction c'est Femme, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.")
         console.log("Commande new effectué");
