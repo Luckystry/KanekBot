@@ -18,7 +18,7 @@ bot.on('message', message => {
 
     ClientDiscord.on("message",message => {
         if(message.content[0] === PREFIX) {
-            if(message.content === "*regles"){
+            if(message.content === "regles"){
                 message.channel.send("Merci de prendre connaissance des règles et de les appliqués");
                 ClientDiscord.channels.get("406386550968942592").send("Commande de l'ulilisateur : " + message.author.username);
             }
