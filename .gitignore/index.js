@@ -10,17 +10,16 @@ bot.on('ready', function() {
 
 bot.login("NDA2Mzg2NTUwOTY4OTQyNTky.DVB-ZQ.47ONjyymj9eyiGfqTJpWS5WXGaE");
 
+bot.on('message', function (message) {
+    if (message.content === '*regles') {
+        message.channel.send('Merci de prendre connaissance des règles de les appliquées.')
+    }
+  })
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
         message.channel.sendMessage("Liste des commandes: \n -*help. new");
     }
-
-  bot.on('message', function (message) {
-      if (message.content === '*regles') {
-          message.channel.send('Merci de prendre connaissance des règles de les appliquées.')
-      }
-  });
 
 
     if (message.content === "new"){
