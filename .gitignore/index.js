@@ -18,7 +18,7 @@ bot.on('message', function (message) {
 
 bot.on('message', function (message) {
     if (message.content === '*new') {
-        message.channel.send('Pour les nouveaux allez dans le channel #vos-roles. Vous allez voir que vous pouvez choisir vos rôles par exemples H en réaction c'est homme et F en réaction c'est Femme, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.')
+        message.channel.send("Pour les nouveaux allez dans le channel #vos-roles. Vous allez voir que vous pouvez choisir vos rôles par exemples H en réaction c'est homme et F en réaction c'est Femme, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.")
     }
   })
 
