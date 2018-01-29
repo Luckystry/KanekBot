@@ -72,7 +72,7 @@ bot.on('message', message => {
 
 
 
-})
+});
 
 
     
