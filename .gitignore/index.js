@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 var prefix = ("*")
 
 bot.on('ready', function() {
-    bot.user.setGame("Command: *help");
+    bot.user.setGame("Créateur NOX");
     console.log("Connectedç");
 });
 
@@ -18,13 +18,13 @@ bot.on('message', function (message) {
 
 bot.on('message', function (message) {
     if (message.content === '*new') {
-        message.channel.send("Pour les nouveaux allez dans le channel #vos-roles. Vous allez voir que vous pouvez choisir vos rôles par exemples H en réaction c'est homme et F en réaction c'est Femme, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.")
+        message.channel.send("Pour les nouveaux vous allez voir que vous pouvez choisir vos rôles par exemples H en réaction c'est homme et F en réaction c'est Femme, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.")
     }
   })
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n -*regles \n -new");
+        message.channel.sendMessage("Liste des commandes: \n -*regles, \n -*new");
     }
 
     if (message.content === "wesh"){
@@ -68,13 +68,4 @@ bot.on('message', message => {
         console.log("Commande je t'aime effectué");
 
     }
-
-
-
 })
-
-
-    
-
-
- 
