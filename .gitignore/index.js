@@ -24,7 +24,7 @@ bot.on('message', function (message) {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \n -*regles \r -*new");
+        message.channel.sendMessage("Liste des commandes: \r -*regles \n -*new");
     }
 
     if (message.content === "wesh"){
