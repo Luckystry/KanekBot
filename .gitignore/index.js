@@ -24,7 +24,7 @@ bot.on('message', function (message) {
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes: \r - *regles \r - *new");
+        message.channel.sendMessage("Liste des commandes: \n -*regles, \n -*new");
     }
 
     if (message.content === "wesh"){
@@ -68,4 +68,12 @@ bot.on('message', message => {
         console.log("Commande je t'aime effectué");
 
     }
+
+    bot.on('message', function (message) {
+        if (message.content === '*new') {
+            message.channel.send(">Ne pas envoyer pas de photo pédopornographique dans les salons du serveur. Vérifiez les sources de vos photos pour éviter tout problème \r >Respecter les lois en vigueurs en France et dans vos pays respectif. \r >Ne pas harceler, rabaisser et ne pas divulguer d’information sur les personnes sans leurs accords. \r >Ne pas spam et évitez les doubles postes. \r >Respectez les salons et leurs contenues. \r >Respectez les autres. \r >Ne pas demander de rôles. \r >Les pubs sont totalement interdites. \r >Le troll est interdit.")
+        }
+      })
+    
+
 })
