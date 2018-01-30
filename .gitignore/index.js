@@ -64,7 +64,7 @@ bot.on('message', message => {
     }
 
     if (message.content === "Je t'aime"){
-        message.reply("Je suis dévouée à Nox. Dsl.")
+        message.reply("Je suis dévouée à Nox. Sorry my friend.:slight_smile: ")
         console.log("Commande je t'aime effectué");
 
     }
