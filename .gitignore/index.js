@@ -27,15 +27,6 @@ bot.on('message', message => {
         message.channel.sendMessage("Liste des commandes: \n - *regles, \n - *new");
     }
 
-    if (message.content === prefic + "help"){
-        var help_embed = new Discord.RichEmbed()
-            .SetColor('#01FEDC')
-            .addField("Commande", "    -/help: Affiche les commandes mis aà votre disposotion")
-        message.channel.sendEmbed(help_embed);
-        //message.reply("On est pas a Villeurbanne ici")
-        console.log("Commande help effectué");
-
-    }
 
     if (message.content === "wesh"){
         message.reply("On est pas a Villeurbanne ici")
