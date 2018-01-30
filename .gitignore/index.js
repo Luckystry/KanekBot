@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 var prefix = ("/")
 
 bot.on('ready', function() {
-    bot.user.setGame("Créateur NOX");
+    bot.user.setGame("Créateur: Nox");
     console.log("Connectedç");
 });
 
@@ -20,9 +20,9 @@ bot.on('message', function (message) {
     if (message.content === '/new') {
         message.channel.send("Pour les nouveaux vous allez voir que vous pouvez choisir vos rôles par exemples H en réaction c'est homme et F en réaction c'est Femme, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.")
     }
-  })
+  
 
-if (message.content === prefix + "hel"){
+    if (message.content === prefix + "help"){
         message.channel.sendMessage("Liste des commandes: \n - *regles, \n - *new");
     }
 
@@ -67,4 +67,5 @@ if (message.content === prefix + "hel"){
         console.log("Commande je t'aime effectué");
 
     }
+
 })
