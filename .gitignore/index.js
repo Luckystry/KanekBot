@@ -22,6 +22,9 @@ bot.on('message', function (message) {
     }
   })
 
+if (message.content === prefix + "hel"){
+        message.channel.sendMessage("Liste des commandes: \n - *regles, \n - *new");
+    }
   
 bot.on('message', message => {
 
