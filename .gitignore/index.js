@@ -8,11 +8,11 @@ bot.on('ready', function() {
     console.log("Connectedç");
 });
 
-bot.login("NDA2Mzg2NTUwOTY4OTQyNTky.DVB-ZQ.47ONjyymj9eyiGfqTJpWS5WXGaE");
+bot.login("NDA2Mzg2NTUwOTY4OTQyNTky.DVIIBw.4fYscZ7Fb_9J1LIzgFoatWABApQ");
 
 bot.on('message', function (message) {
     if (message.content === '*regles') {
-        message.channel.send('Merci de prendre connaissance des règles de les appliquées.')
+        message.channel.send(">Ne pas envoyer pas de photo pédopornographique dans les salons du serveur. Vérifiez les sources de vos photos pour éviter tout problème \r >Respecter les lois en vigueurs en France et dans vos pays respectif. \r >Ne pas harceler, rabaisser et ne pas divulguer d’information sur les personnes sans leurs accords. \r >Ne pas spam et évitez les doubles postes. \r >Respectez les salons et leurs contenues. \r >Respectez les autres. \r >Ne pas demander de rôles. \r >Les pubs sont totalement interdites. \r >Le troll est interdit.")
     }
   })
 
@@ -68,10 +68,4 @@ bot.on('message', message => {
         console.log("Commande je t'aime effectué");
 
     }
-
-    bot.on('message', function (message) {
-        if (message.content === '*new') {
-            message.channel.send(">Ne pas envoyer pas de photo pédopornographique dans les salons du serveur. Vérifiez les sources de vos photos pour éviter tout problème \r >Respecter les lois en vigueurs en France et dans vos pays respectif. \r >Ne pas harceler, rabaisser et ne pas divulguer d’information sur les personnes sans leurs accords. \r >Ne pas spam et évitez les doubles postes. \r >Respectez les salons et leurs contenues. \r >Respectez les autres. \r >Ne pas demander de rôles. \r >Les pubs sont totalement interdites. \r >Le troll est interdit.")
-        }
-      })
 })
