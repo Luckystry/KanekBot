@@ -26,6 +26,7 @@ bot.on('message', function (message) {
             message.delete()
             message.author.send("Merci de lire les règles, il n'y a pas besoin d'écrire ;-)")
     } 
+}
 
     if (message.content === prefix + "help"){
         message.channel.sendMessage("Liste des commandes: \n - *regles, \n - *new");
@@ -74,4 +75,3 @@ bot.on('message', function (message) {
     }
 
 })
-    
