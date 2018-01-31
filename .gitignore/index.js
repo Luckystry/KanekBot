@@ -18,7 +18,7 @@ bot.on('message', function (message) {
 
 bot.on('message', function (message) {
     if (message.content === '/new') {
-        message.channel.send("Pour les nouveaux vous allez voir que vous pouvez choisir vos rôles par exemples H en réaction c'est homme et F en réaction c'est Femme, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.")
+        message.channel.send("Pour les nouveaux vous allez voir que vous pouvez choisir vos rôles et accepter les règles dans #vos-role et #acceptez-le-reglement-pour-rejoindre-le-serveur .Par exemples H en réaction c'est homme et F en réaction c'est Femme et le signe vert pour accepter les règles, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.")
     }
   
     if (message.channel.id === '408191248256598016') {
