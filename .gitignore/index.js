@@ -24,7 +24,14 @@ bot.on('message', function (message) {
     if (message.channel.id === '408191248256598016') {
         if (isNaN(message.content)) {
             message.delete()
-            message.author.send("Merci de lire les règles, il n'y a pas besoin d'écrire ;-)")
+            message.author.send("Merci de lire les règles, il n'y a pas besoin d'écrire ici ;-)")
+    } 
+}
+    
+       if (message.channel.id === '407993050929823765') {
+        if (isNaN(message.content)) {
+            message.delete()
+            message.author.send("Merci de lire les règleset de cliquer sur la réaction déjà mise, il n'y a pas besoin d'écrire ici ;-)")
     } 
 }
 
