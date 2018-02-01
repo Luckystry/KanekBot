@@ -3,6 +3,8 @@
 
     var prefix = ("*")
 
+    db.defaults({ histoires: [], xp: []}).write
+
     bot.on('ready', function() {
         bot.user.setGame("Créateur: Nox");
         console.log("Connectedç");
@@ -16,6 +18,23 @@
         }
     })
 
+        var msgauthor = message.author.id;
+
+        if(message.author.bot)return;
+
+        if(!db.get("xp").find({user: msgauthor}).value()){
+            db.get("xp").push({user: msgauthor, xp: 1}).write();
+        }else{
+            var userxpdb = db.get("xp").filter({user: msgauthor}).find('xp').value();
+            console.log(userxpdb);
+            var userxp = Object.values(userxpdb)
+            console.log(userxp);
+            console.log(`Nombre d'xp : ${userxp[1]}`)
+
+            db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 1}).write();
+
+        }
+
     bot.on('message', function (message) {
         if (message.content === '*new') {
             message.channel.send("Pour les nouveaux vous allez voir que vous pouvez choisir vos rôles par exemples H en réaction c'est homme et F en réaction c'est Femme, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.")
@@ -26,7 +45,6 @@
                 message.delete()
                 message.author.send("Merci de lire les règles, il n'y a pas besoin d'écrire ;-)")
         } 
-    }
 
         if (message.content === prefix + "help"){
             message.channel.sendMessage("Liste des commandes: \n - *regles, \n - *new");
@@ -41,7 +59,6 @@
                 .addField("xp :", '${xpfinal[1]} xp')
             message.channel.send({embed: xp_embed});
         }
-
 
         if (message.content === "wesh"){
             message.reply("On est pas a Villeurbanne ici")
