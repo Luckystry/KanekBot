@@ -55,7 +55,7 @@
             var xp = db.get("xp").filter({user: msgauthor}).find('xp').value()
             var xpfinal = Object.values(xp);
             var xp_embed = new Discord.RichEmbed()
-                .setTitle('xp de ${message.author}')
+                .setTitle('xp de ${message.author.username}')
                 .setDescription("Voici tout tes xp")
                 .addField("xp :", '${xpfinal[1]} xp')
             message.channel.send({embed: xp_embed});
