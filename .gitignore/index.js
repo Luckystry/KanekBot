@@ -3,8 +3,6 @@
 
     var prefix = ("*")
 
-    db.defaults({ histoires: [], xp: []}).write
-
     bot.on('ready', function() {
         bot.user.setGame("Créateur: Nox");
         console.log("Connectedç");
@@ -17,23 +15,6 @@
             message.channel.send(">Ne pas envoyer pas de photo pédopornographique dans les salons du serveur. Vérifiez les sources de vos photos pour éviter tout problème \r >Respecter les lois en vigueurs en France et dans vos pays respectif. \r >Ne pas harceler, rabaisser et ne pas divulguer d’information sur les personnes sans leurs accords. \r >Ne pas spam et évitez les doubles postes. \r >Respectez les salons et leurs contenues. \r >Respectez les autres. \r >Ne pas demander de rôles. \r >Les pubs sont totalement interdites. \r >Le troll est interdit.")
         }
     })
-
-        var msgauthor = message.author.id;
-
-        if(message.author.bot)return;
-
-        if(!db.get("xp").find({user: msgauthor}).value()){
-            db.get("xp").push({user: msgauthor, xp: 1}).write();
-        }else{
-            var userxpdb = db.get("xp").filter({user: msgauthor}).find('xp').value();
-            console.log(userxpdb);
-            var userxp = Object.values(userxpdb)
-            console.log(userxp);
-            console.log(`Nombre d'xp : ${userxp[1]}`)
-
-            db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 1}).write();
-
-        }
 
     bot.on('message', function (message) {
         if (message.content === '*new') {
@@ -50,17 +31,6 @@
         if (message.content === prefix + "help"){
             message.channel.sendMessage("Liste des commandes: \n - *regles, \n - *new");
         }
-
-        if (message.content === prefix + "xpstat"){
-            var xp = db.get("xp").filter({user: msgauthor}).find('xp').value()
-            var xpfinal = Object.values(xp);
-            var xp_embed = new Discord.RichEmbed()
-                .setTitle('xp de ${message.author.username}')
-                .setDescription("Voici tout tes xp")
-                .addField("xp :", '${xpfinal[1]} xp')
-            message.channel.send({embed: xp_embed});
-        }
-
 
         if (message.content === "wesh"){
             message.reply("On est pas a Villeurbanne ici")
