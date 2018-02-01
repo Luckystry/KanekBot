@@ -45,6 +45,7 @@
                 message.delete()
                 message.author.send("Merci de lire les règles, il n'y a pas besoin d'écrire ;-)")
         } 
+    }
 
         if (message.content === prefix + "help"){
             message.channel.sendMessage("Liste des commandes: \n - *regles, \n - *new");
@@ -59,6 +60,7 @@
                 .addField("xp :", '${xpfinal[1]} xp')
             message.channel.send({embed: xp_embed});
         }
+
 
         if (message.content === "wesh"){
             message.reply("On est pas a Villeurbanne ici")
