@@ -61,6 +61,8 @@ bot.on('message', function (message) {
         message.channel.send({embed: xp_embed});
     }
 
+});
+
     if (message.content === "wesh"){
         message.reply("On est pas a Villeurbanne ici")
         console.log("Commande wesh effectué");
