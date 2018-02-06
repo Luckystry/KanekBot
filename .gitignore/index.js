@@ -12,7 +12,7 @@
 
     bot.on('message', function (message) {
         if (message.content === '*regles') {
-            message.channel.send(">Ne pas envoyer pas de photo pédopornographique dans les salons du serveur. Vérifiez les sources de vos photos pour éviter tout problème \r >Respecter les lois en vigueurs en France et dans vos pays respectif. \r >Ne pas harceler, rabaisser et ne pas divulguer d’information sur les personnes sans leurs accords. \r >Ne pas spam et évitez les doubles postes. \r >Respectez les salons et leurs contenues. \r >Respectez les autres. \r >Ne pas demander de rôles. \r >Les pubs sont totalement interdites. \r >Le troll est interdit.")
+            message.channel.send("***IL EST IMPÉRATIF*** de respecter chaque chanel. Toute actions entreprise dans le mauvais chanel débouchera sur un mute de 5 à 10 minutes et 1 avertissement(warn). \r -Au bout de ***3*** avertissements (warn) un kick du serveur sera effectuée. Au bout de 5 avertissements(warn) c'est un ban définitif du serveur. Pour suppression de warn il faut ***1 semaine*** sans aucune erreur. \r -Le respect d'autrui est ***PRIMORDIALE***. Toute insultes, menaces, harcèlement, incitation à la haine ou à la violence serra puni d'un kick immédiat du serveur. Toute récidives se verra ban définitivement avec possibilité de de- bannissement au bout de 2 jours. \r -***TOUT*** manquement de respect à un membre du staff sera puni d'un avertissement(warn).")
         }
     })
 
