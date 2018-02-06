@@ -16,12 +16,6 @@
         }
     })
 
-
-
-    bot.on('message', function (message) {
-        if (message.content === '*new') {
-            message.channel.send("Bienvenue à toi, lis les règles avant de te servire du discord y pas grand chose à lire :wink:. Fait ta présentation et le staff mettra les rôle qui te vont. Il y a des grades automatique qui donne des channel privée alors n'hésite pas à être présent, on va pas te manger =). Ici nous voulons des gens mature mais on sait rire alors profite bien.")
-        }
     
         if (message.channel.id === '408191248256598016') {
             if (isNaN(message.content)) {
