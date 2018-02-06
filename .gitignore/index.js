@@ -16,62 +16,22 @@
         }
     })
 
+
+
     bot.on('message', function (message) {
         if (message.content === '*new') {
-            message.channel.send("Pour les nouveaux vous allez voir que vous pouvez choisir vos rôles par exemples H en réaction c'est homme et F en réaction c'est Femme, vous avez juste a cliquer sur la bonne réaction et ainsi de suite.")
+            message.channel.send("Bienvenue à toi, lis les règles avant de te servire du discord y pas grand chose à lire :wink:. Fait ta présentation et le staff mettra les rôle qui te vont. Il y a des grades automatique qui donne des channel privée alors n'hésite pas à être présent, on va pas te manger =). Ici nous voulons des gens mature mais on sait rire alors profite bien.")
         }
     
         if (message.channel.id === '408191248256598016') {
             if (isNaN(message.content)) {
                 message.delete()
-                message.author.send("Merci de lire les règles, il n'y a pas besoin d'écrire ;-)")
+                message.author.send("Merci de lire les règles, il n'y a pas besoin d'écrire :wink:")
         } 
     }
 
         if (message.content === prefix + "help"){
             message.channel.sendMessage("Liste des commandes: \n - *regles, \n - *new");
-        }
-
-        if (message.content === "wesh"){
-            message.reply("On est pas a Villeurbanne ici")
-            console.log("Commande wesh effectué");
-
-        }
-
-        if (message.content === "wsh"){
-            message.reply("On est pas a Villeurbanne ici")
-            console.log("Commande wesh effectué");
-
-        }
-
-        if (message.content === "Wesh"){
-            message.reply("On est pas a Villeurbanne ici")
-            console.log("Commande wesh effectué");
-
-        }
-
-        if (message.content === "WESH"){
-            message.reply("On est pas a Villeurbanne ici")
-            console.log("Commande wesh effectué");
-
-        }
-
-        if (message.content === "putain"){
-            message.reply("il n'y'a pas de putain, que des dames qui travaillent")
-            console.log("Commande putain effectué");
-
-        }
-        
-        if (message.content === "Putain"){
-            message.reply("il n'y'a pas de putain, que des dames qui travaillent")
-            console.log("Commande Putain effectué");
-
-        }
-
-        if (message.content === "Je t'aime"){
-            message.reply("Je suis dévouée à Nox. Sorry my friend.:slight_smile: ")
-            console.log("Commande je t'aime effectué");
-
         }
 
     })  
