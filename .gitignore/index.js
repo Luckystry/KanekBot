@@ -12,7 +12,7 @@
 
     bot.on('message', function (message) {
         if (message.content === '*regles') {
-            message.channel.send("***IL EST IMPÉRATIF*** de respecter chaque chanel. Toute actions entreprise dans le mauvais chanel débouchera sur un mute de 5 à 10 minutes et 1 avertissement(warn). \r -Au bout de ***3*** avertissements (warn) un kick du serveur sera effectuée. Au bout de 5 avertissements(warn) c'est un ban définitif du serveur. Pour suppression de warn il faut ***1 semaine*** sans aucune erreur. \r -Le respect d'autrui est ***PRIMORDIALE***. Toute insultes, menaces, harcèlement, incitation à la haine ou à la violence serra puni d'un kick immédiat du serveur. Toute récidives se verra ban définitivement avec possibilité de de- bannissement au bout de 2 jours. \r -***TOUT*** manquement de respect à un membre du staff sera puni d'un avertissement(warn).")
+            message.channel.send("***-IL EST IMPÉRATIF*** de respecter chaque chanel. Toute actions entreprise dans le mauvais chanel débouchera sur un mute de 5 à 10 minutes et 1 avertissement(warn). \r -Au bout de ***3*** avertissements (warn) un kick du serveur sera effectuée. Au bout de 5 avertissements(warn) c'est un ban définitif du serveur. Pour suppression de warn il faut ***1 semaine*** sans aucune erreur. \r -Le respect d'autrui est ***PRIMORDIALE***. Toute insultes, menaces, harcèlement, incitation à la haine ou à la violence serra puni d'un kick immédiat du serveur. Toute récidives se verra ban définitivement avec possibilité de de- bannissement au bout de 2 jours. \r -***TOUT*** manquement de respect à un membre du staff sera puni d'un avertissement(warn).")
         }
     })
 
